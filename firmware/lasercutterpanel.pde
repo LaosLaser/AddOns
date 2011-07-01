@@ -7,24 +7,39 @@
 //
 // include libraries:
 #include <LiquidCrystal.h> // LCD display driver
-#include <Gkos.h>  // 6-key keyboard library
 #include <Wire.h> // Wire library for I2C
+#include <Keypad.h>
 
 // initialize libraries with numbers of the interface pins
-LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
-Gkos gkos(0, 2, 3, 4, 5, 6);
 
+LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
+
+const byte ROWS = 4; //four rows
+const byte COLS = 3; //three columns
+char keys[ROWS][COLS] = {
+  {'1','2','3'},
+  {'4','5','6'},
+  {'7','8','9'},
+  {'#','0','*'}
+};
+byte rowPins[ROWS] = {5, 4, 3, 2}; //connect to the row pinouts of the keypad
+byte colPins[COLS] = {A0, A1, 6}; //connect to the column pinouts of the keypad
+
+Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 // I2C is using analog pins 4 and 5
 // Arduino analog input 4 = I2C SDA 
 // Arduino analog input 5 = I2C SCL 
 
-static char* gEntry = "";
 static int ourI2C = 2;
 
-char buffer[10] = "";
+char newkey;
 int counter = 0;
 
 void setup(){
+  pinMode(A0,OUTPUT);
+  digitalWrite(A0,HIGH);
+  pinMode(A1,OUTPUT);
+  digitalWrite(A1,HIGH);
   Serial.begin(9600); 
   Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
   Wire.onReceive(receiveEvent);  //register I2C events
@@ -36,23 +51,29 @@ void setup(){
   
   // Print a message to the LCD.
   lcd.print("I2C laser-panel");
+  Serial.println("rebooted");
 }
 
 void loop(){
-  gEntry = gkos.entry(); // Will return empty immediately if no entry
-  if ((gEntry[0] != 0) && (counter<10)) {  // Not NULL
-    buffer[counter++] = gEntry[0];
-    Serial.write(gEntry[0]);
+  
+  char key = keypad.getKey();
+  if (key != NO_KEY) {  // Not NULL
+    newkey = key;
+    Serial.println(key);
   }
 }
 
 void requestEvent() {
-  char x;
-  Wire.send(buffer[0]);
-  for (int x=1; x<counter; x++) {
-    buffer[x-1] = buffer[x];
+  if (newkey != 0) {
+    char x;
+    Wire.send(newkey);
+    newkey = 0;
+    Serial.print("Sending character: ");
+    Serial.println(newkey);
+  } else {
+    Serial.print("Sending empty string, no input\n");
+    Wire.send(0);
   }
-  counter--;
 }
   
 void receiveEvent(int howMany) {
