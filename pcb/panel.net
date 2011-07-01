@@ -1,0 +1,305 @@
+# EESchema Netlist Version 1.1 created  Sat 02 Jul 2011 12:55:40 AM CEST
+(
+ ( /4E0E4EFB $noname  P7 CONN_1 {Lib=CONN_1}
+  (    1 N-000004 )
+ )
+ ( /4E0E4EF7 $noname  P6 CONN_1 {Lib=CONN_1}
+  (    1 N-000003 )
+ )
+ ( /4E0E4EEC $noname  P5 CONN_1 {Lib=CONN_1}
+  (    1 N-000002 )
+ )
+ ( /4E0E4EE7 $noname  P4 CONN_1 {Lib=CONN_1}
+  (    1 N-000001 )
+ )
+ ( /4E0E4902 $noname  D1 LED {Lib=LED}
+  (    1 +5V )
+  (    2 N-000035 )
+ )
+ ( /4E0E48F8 $noname  R2 R {Lib=R}
+  (    1 N-000034 )
+  (    2 N-000035 )
+ )
+ ( /4E0E48A7 $noname  D2 LED {Lib=LED}
+  (    1 +5V )
+  (    2 N-000031 )
+ )
+ ( /4E0E488E $noname  R3 330 {Lib=R}
+  (    1 N-000031 )
+  (    2 N-000036 )
+ )
+ ( /4E0E4783 $noname  R1 680 {Lib=R}
+  (    1 N-000017 )
+  (    2 N-000006 )
+ )
+ ( /4E0E46F1 $noname  BC547C1 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000006 )
+  (    3 N-000007 )
+ )
+ ( /4E0E45E2 $noname  RV1 10k {Lib=POT}
+  (    1 +5V )
+  (    2 N-000008 )
+  (    3 GND )
+ )
+ ( /4E0E44C9 $noname  U1 2X16DIGIT-DISPLAY {Lib=2X16DIGIT-DISPLAY}
+  (    1 GND )
+  (    2 +5V )
+  (    3 N-000008 )
+  (    4 N-000033 )
+  (    5 GND )
+  (    6 N-000009 )
+  (    7 N-000001 )
+  (    8 N-000002 )
+  (    9 N-000003 )
+  (   10 N-000004 )
+  (   11 N-000012 )
+  (   12 N-000013 )
+  (   13 N-000014 )
+  (   14 N-000015 )
+  (   15 +5V )
+  (   16 N-000007 )
+ )
+ ( /4E0E42A2 $noname  F1 CERAMIC_FILTER {Lib=CERAMIC_FILTER}
+  (    1 N-000011 )
+  (    2 GND )
+  (    3 N-000005 )
+ )
+ ( /4E0E4221 $noname  100uF1 CP {Lib=CP}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4E0E4209 $noname  100nF1 C {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4E0E4171 $noname  P1 SERIAL {Lib=CONN_5}
+  (    1 +5V )
+  (    2 N-000028 )
+  (    3 N-000018 )
+  (    4 GND )
+  (    5 N-000027 )
+ )
+ ( /4E0E2642 $noname  P3 KEYBOARD {Lib=CONN_7}
+  (    1 N-000019 )
+  (    2 N-000016 )
+  (    3 N-000020 )
+  (    4 N-000021 )
+  (    5 N-000022 )
+  (    6 N-000023 )
+  (    7 N-000024 )
+ )
+ ( /4E0E25F8 $noname  P2 I2C {Lib=CONN_4}
+  (    1 +5V )
+  (    2 GND )
+  (    3 N-000025 )
+  (    4 N-000026 )
+ )
+ ( /4E0E2533 MLF44  IC1 ATMEGA88P-20PU {Lib=ATMEGA88P-20PU}
+  (    1 N-000027 )
+  (    2 N-000018 )
+  (    3 N-000028 )
+  (    4 N-000034 )
+  (    5 N-000033 )
+  (    6 N-000009 )
+  (    7 +5V )
+  (    8 GND )
+  (    9 N-000011 )
+  (   10 N-000005 )
+  (   11 N-000012 )
+  (   12 N-000013 )
+  (   13 N-000014 )
+  (   14 N-000015 )
+  (   15 N-000036 )
+  (   16 N-000024 )
+  (   17 N-000023 )
+  (   18 N-000022 )
+  (   19 N-000021 )
+  (   20 N-000032 )
+  (   21 N-000032 )
+  (   22 GND )
+  (   23 N-000020 )
+  (   24 N-000016 )
+  (   25 N-000019 )
+  (   26 N-000017 )
+  (   27 N-000026 )
+  (   28 N-000025 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component 100uF1
+ CP*
+ SM*
+$endlist
+$component 100nF1
+ SM*
+ C?
+ C1-1
+$endlist
+$component IC1
+ MLF44
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ P4 1
+ U1 7
+Net 2 "" ""
+ U1 8
+ P5 1
+Net 3 "" ""
+ U1 9
+ P6 1
+Net 4 "" ""
+ U1 10
+ P7 1
+Net 5 "" ""
+ F1 3
+ IC1 10
+Net 6 "" ""
+ R1 2
+ BC547C1 2
+Net 7 "" ""
+ BC547C1 3
+ U1 16
+Net 8 "" ""
+ RV1 2
+ U1 3
+Net 9 "" ""
+ U1 6
+ IC1 6
+Net 10 "+5V" "+5V"
+ IC1 7
+ P1 1
+ P2 1
+ 100uF1 1
+ 100nF1 1
+ U1 15
+ D2 1
+ U1 2
+ D1 1
+ RV1 1
+Net 11 "" ""
+ IC1 9
+ F1 1
+Net 12 "" ""
+ U1 11
+ IC1 11
+Net 13 "" ""
+ U1 12
+ IC1 12
+Net 14 "" ""
+ IC1 13
+ U1 13
+Net 15 "" ""
+ IC1 14
+ U1 14
+Net 16 "" ""
+ IC1 24
+ P3 2
+Net 17 "" ""
+ IC1 26
+ R1 1
+Net 18 "" ""
+ P1 3
+ IC1 2
+Net 19 "" ""
+ P3 1
+ IC1 25
+Net 20 "" ""
+ P3 3
+ IC1 23
+Net 21 "" ""
+ P3 4
+ IC1 19
+Net 22 "" ""
+ P3 5
+ IC1 18
+Net 23 "" ""
+ P3 6
+ IC1 17
+Net 24 "" ""
+ P3 7
+ IC1 16
+Net 25 "" ""
+ IC1 28
+ P2 3
+Net 26 "" ""
+ P2 4
+ IC1 27
+Net 27 "" ""
+ IC1 1
+ P1 5
+Net 28 "" ""
+ IC1 3
+ P1 2
+Net 29 "GND" "GND"
+ RV1 3
+ U1 1
+ IC1 8
+ BC547C1 1
+ 100nF1 2
+ 100uF1 2
+ F1 2
+ U1 5
+ P2 2
+ P1 4
+ IC1 22
+Net 31 "" ""
+ D2 2
+ R3 1
+Net 32 "" ""
+ IC1 21
+ IC1 20
+Net 33 "" ""
+ IC1 5
+ U1 4
+Net 34 "" ""
+ R2 1
+ IC1 4
+Net 35 "" ""
+ R2 2
+ D1 2
+Net 36 "" ""
+ R3 2
+ IC1 15
+}
+#End

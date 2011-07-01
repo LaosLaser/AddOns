@@ -1,0 +1,29 @@
+eeschema (2011-06-28 BZR 3032)-testing  >> Creation date: Sat 02 Jul 2011 12:36:47 AM CEST
+
+#Cmp ( order = Reference )
+| 100nF      C           
+| 100uF      CP          
+| BC547C     NPN         
+| D?         LED         
+| F?         CERAMIC_FILTER
+| IC?        ATMEGA88P-20PU
+| P?         I2C         
+| R?         330         
+| RV?        10k         
+| U?         2X16DIGIT-DISPLAY
+#End Cmp
+
+#Cmp ( order = Value )
+| 10k          RV?       
+| 2X16DIGIT-DISPLAY U?        
+| 330          R?        
+| ATMEGA88P-20PU IC?       
+| C            100nF     
+| CERAMIC_FILTER F?        
+| CP           100uF     
+| I2C          P?        
+| LED          D?        
+| NPN          BC547C    
+#End Cmp
+
+#End List

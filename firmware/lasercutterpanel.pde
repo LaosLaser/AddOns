@@ -9,10 +9,13 @@
 #include <LiquidCrystal.h> // LCD display driver
 #include <Wire.h> // Wire library for I2C
 #include <Keypad.h>
+#define LCDBACKLIGHT A3
+#define LASERLED 9
+#define OKLED 2
 
 // initialize libraries with numbers of the interface pins
 
-LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
+LiquidCrystal lcd(3, 4, 5, 6, 7, 8);
 
 const byte ROWS = 4; //four rows
 const byte COLS = 3; //three columns
@@ -22,8 +25,8 @@ char keys[ROWS][COLS] = {
   {'7','8','9'},
   {'#','0','*'}
 };
-byte rowPins[ROWS] = {5, 4, 3, 2}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {A0, A1, 6}; //connect to the column pinouts of the keypad
+byte rowPins[ROWS] = {10,11,12,13}; //connect to the row pinouts of the keypad
+byte colPins[COLS] = {A0, A1, A2}; //connect to the column pinouts of the keypad
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 // I2C is using analog pins 4 and 5
@@ -34,14 +37,27 @@ static int ourI2C = 2;
 
 char newkey, lastkey, keystate, blinkcnt;
 int counter = 0;
+bool lled, okled;
 
 void setup(){
+  // use these pins (normally analog out) for keyboard-input?!
   pinMode(A0,OUTPUT);
   digitalWrite(A0,HIGH);
   pinMode(A1,OUTPUT);
   digitalWrite(A1,HIGH);
-  pinMode(A2, OUTPUT);
-  analogWrite(A2, 255);
+  pinMode(A2,OUTPUT);
+  digitalWrite(A2,HIGH);
+  
+  pinMode(LASERLED, OUTPUT);
+  digitalWrite(LASERLED, LOW);
+  lled = LOW;
+  
+  pinMode(OKLED, OUTPUT);
+  digitalWrite(OKLED, HIGH);
+  okled = HIGH;
+  
+  pinMode(LCDBACKLIGHT, OUTPUT);
+  analogWrite(LCDBACKLIGHT, 255);
   Serial.begin(9600); 
   Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
   Wire.onReceive(receiveEvent);  //register I2C events
@@ -71,7 +87,7 @@ void loop(){
   if (blinkcnt <255) {
     delay(100);
     blinkcnt = 255;
-    analogWrite(A2, 255);
+    analogWrite(LCDBACKLIGHT, 255);
   }
 }
 
@@ -97,8 +113,16 @@ void receiveEvent(int howMany) {
                     lcd.home();
                     Serial.println("LCDHome");
                     break;
+        case 7:	  // Turn on/off ok led
+		    okled = not(okled);
+		    digitalWrite(OKLED, okled);
+		    break; 
+	case 8:	  // Turn on/off laser led
+		    lled = not(lled);
+		    digitalWrite(LASERLED, lled);
+		    break; 
         case 9:    // Tab is blink screen
-                    analogWrite(A2, 0);
+                    analogWrite(LCDBACKLIGHT, 0);
                     blinkcnt = 0;
                     break;
         case 10:  // New line
