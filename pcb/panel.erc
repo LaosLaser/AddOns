@@ -1,23 +1,19 @@
-ERC report (Sat 02 Jul 2011 12:41:26 AM CEST)
+ERC report (Sat 02 Jul 2011 11:00:34 AM CEST)
 
 ***** Sheet / (Root) 
 ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (6.6000 ",2.1000 "): Cmp IC1, Pin 28 (power_in) not driven (Net 27)
+    @ (2.2000 ",1.4000 "): Cmp #PWR09, Pin 1 (power_in) not driven (Net 12)
 ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (4.6000 ",2.8000 "): Cmp IC1, Pin 8 (power_in) not driven (Net 12)
+    @ (3.3000 ",2.2000 "): Cmp IC1, Pin 6 (power_in) not driven (Net 11)
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (1.5500 ",2.3000 "): Cmp U1, Pin 7 (unspc) Unconnected
 ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (4.2000 ",1.7500 "): Cmp #PWR016, Pin 1 (power_in) not driven (Net 11)
-ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (2.8500 ",2.6000 "): Cmp U1, Pin 6 (input) not driven (Net 10)
-ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (4.6000 ",2.5000 "): Cmp IC1, Pin 5 (power_in) not driven (Net 9)
+    @ (1.7000 ",1.4000 "): Cmp #PWR010, Pin 1 (power_in) not driven (Net 4)
 ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (2.8500 ",3.0000 "): Cmp U1, Pin 10 (input) Unconnected
+    @ (1.5500 ",2.6000 "): Cmp U1, Pin 10 (unspc) Unconnected
 ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (2.8500 ",2.9000 "): Cmp U1, Pin 9 (input) Unconnected
+    @ (1.5500 ",2.5000 "): Cmp U1, Pin 9 (unspc) Unconnected
 ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (2.8500 ",2.8000 "): Cmp U1, Pin 8 (input) Unconnected
-ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (2.8500 ",2.7000 "): Cmp U1, Pin 7 (input) Unconnected
+    @ (1.5500 ",2.4000 "): Cmp U1, Pin 8 (unspc) Unconnected
 
- >> Errors ERC: 9
+ >> Errors ERC: 7
