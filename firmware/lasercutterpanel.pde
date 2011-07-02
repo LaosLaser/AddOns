@@ -1,22 +1,14 @@
 // Laser cutter panel on Arduino
 // by Jaap Vermaas <jaap@fablabtruck.nl>
 //
-// test programma voor de arduino duemilanove
-//
-// multi master I2C to MBED on 42
+// multi master I2C to MBED, channel 4 (not 2!)
 //
 // include libraries:
-#include <LiquidCrystal.h> // LCD display driver
-#include <Wire.h> // Wire library for I2C
-#include <Keypad.h>
-#define LCDBACKLIGHT A3
-#define LASERLED 9
-#define OKLED 2
+#include <LiquidCrystal.h>   // LCD display driver
+#include <Wire.h>           // Wire library for I2C
+#include <Keypad.h>         // Keypad driver
 
-// initialize libraries with numbers of the interface pins
-
-LiquidCrystal lcd(3, 4, 5, 6, 7, 8);
-
+// define keypad
 const byte ROWS = 4; //four rows
 const byte COLS = 3; //three columns
 char keys[ROWS][COLS] = {
@@ -25,54 +17,57 @@ char keys[ROWS][COLS] = {
   {'7','8','9'},
   {'#','0','*'}
 };
+
+// define Arduino pins
+#define LCDBACKLIGHT A2
+#define LASERLED A3
+#define OKLED 4
+LiquidCrystal lcd(2, 3, 5, 6, 7, 8);
 byte rowPins[ROWS] = {10,11,12,13}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {A0, A1, A2}; //connect to the column pinouts of the keypad
+byte colPins[COLS] = {A1, A0, 9}; //connect to the column pinouts of the keypad
+// I2C is using analog pins 4 and 5
+// Arduino analog input A4 = I2C SDA = 
+// Arduino analog input A5 = I2C SCL
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
-// I2C is using analog pins 4 and 5
-// Arduino analog input 4 = I2C SDA 
-// Arduino analog input 5 = I2C SCL 
 
-static int ourI2C = 2;
+
+static int ourI2C = 2; // this defines us as I2C port 4!
 
 char newkey, lastkey, keystate, blinkcnt;
 int counter = 0;
 bool lled, okled;
 
 void setup(){
-  // use these pins (normally analog out) for keyboard-input?!
-  pinMode(A0,OUTPUT);
-  digitalWrite(A0,HIGH);
-  pinMode(A1,OUTPUT);
-  digitalWrite(A1,HIGH);
-  pinMode(A2,OUTPUT);
-  digitalWrite(A2,HIGH);
-  
-  pinMode(LASERLED, OUTPUT);
-  digitalWrite(LASERLED, LOW);
-  lled = LOW;
-  
-  pinMode(OKLED, OUTPUT);
-  digitalWrite(OKLED, HIGH);
-  okled = HIGH;
-  
+  // initialize LCD screen
   pinMode(LCDBACKLIGHT, OUTPUT);
   analogWrite(LCDBACKLIGHT, 255);
-  Serial.begin(9600); 
-  Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
-  Wire.onReceive(receiveEvent);  //register I2C events
-  Wire.onRequest(requestEvent);
-  blinkcnt = 255;
   // set up the LCD's number of rows and columns: 
   lcd.begin(16, 2);
   lcd.noCursor();
   lcd.noAutoscroll();
-  
-  // Print a message to the LCD.
-  //lcd.print("I2C laser-panel");
-  //Serial.println("rebooted");
   lcd.clear();
+  lcd.print("I2C laser-panel");
+  lcd.setCursor(0,1);
+  lcd.print("laoslaser.org");
   
+  pinMode(LASERLED, OUTPUT);
+  digitalWrite(LASERLED, HIGH);
+  pinMode(OKLED, OUTPUT);
+  digitalWrite(OKLED, LOW);
+  
+  delay(5000);
+  lcd.clear();
+  digitalWrite(OKLED, HIGH);
+  digitalWrite(LASERLED, LOW);
+  lled = LOW;
+  okled = HIGH;
+  
+  Serial.begin(9600);
+  Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
+  Wire.onReceive(receiveEvent);  //register I2C events
+  Wire.onRequest(requestEvent);
+  blinkcnt = 255;
 }
 
 void loop(){
