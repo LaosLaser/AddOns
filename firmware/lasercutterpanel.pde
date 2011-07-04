@@ -1,14 +1,35 @@
-// Laser cutter panel on Arduino
-// by Jaap Vermaas <jaap@fablabtruck.nl>
-//
-// multi master I2C to MBED, channel 4 (not 2!)
-//
-// include libraries:
-#include <LiquidCrystal.h>   // LCD display driver
-#include <Wire.h>           // Wire library for I2C
-#include <Keypad.h>         // Keypad driver
+/* Laser cutter panel on Arduino
+ * by Jaap Vermaas <jaap@fablabtruck.nl>
+ *
+ * This code is part of the LAOS - Laser Open Source project
+ * see: http://www.laoslaser.org
+ *
+ *   LaOS is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   LaOS is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with LaOS.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-// define keypad
+/* Important notice: I2C on the Arduino (wire.h) uses 7-bit addressing with
+ * the 8th bit being reserved for read/write.
+ * So the Arduino code in this example uses I2C address 2, but on the
+ * mbed, this corresponds to 0x04
+ */
+  
+// include libraries:
+#include <LiquidCrystal.h>   	// LCD display driver
+#include <Wire.h>           	// Wire library for I2C
+#include <Keypad.h>         	// Keypad driver
+
+// define keypad (as used by Keypad.h)
 const byte ROWS = 4; //four rows
 const byte COLS = 3; //three columns
 char keys[ROWS][COLS] = {
@@ -27,14 +48,11 @@ LiquidCrystal lcd(2, 3, 5, 6, 7, 8);
 byte rowPins[ROWS] = {13,12,11,10}; //connect to the row pinouts of the keypad
 byte colPins[COLS] = {A1, A0, 9}; //connect to the column pinouts of the keypad
 // I2C is using analog pins 4 and 5
-// Arduino analog input A4 = I2C SDA = 
+// Arduino analog input A4 = I2C SDA
 // Arduino analog input A5 = I2C SCL
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
-
-
 static int ourI2C = 2; // this defines us as I2C port 4!
-
 char newkey, lastkey, keystate, blink;
 int counter = 0;
 bool lled, okled;
@@ -59,10 +77,10 @@ void setup(){
   
   delay(5000);
   lcd.clear();
-  digitalWrite(OKLED, HIGH);
+  digitalWrite(OKLED, LOW);
   digitalWrite(LASERLED, LOW);
   lled = LOW;
-  okled = HIGH;
+  okled = LOW;
   
   Serial.begin(9600);
   Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
