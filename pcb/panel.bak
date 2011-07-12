@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 11 Jul 2011 05:51:30 PM CEST
+EESchema Schematic File Version 2  date Tue 12 Jul 2011 08:45:49 PM CEST
 LIBS:panel-cache
 LIBS:power
 LIBS:device
@@ -38,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "ATMEGA based LCD/Keyboard driver"
 Date "11 jul 2011"
-Rev "0.1"
+Rev "0.2"
 Comp "LAOSlaser.org"
 Comment1 ""
 Comment2 ""
