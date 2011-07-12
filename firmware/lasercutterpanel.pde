@@ -40,22 +40,22 @@ char keys[ROWS][COLS] = {
 };
 
 // define Arduino pins
-#define LCDBACKLIGHT A2
-#define LASERLED A3
-#define OKLED 4
+#define LCDBACKLIGHT A1
+#define LASERLED A2
+#define OKLED A3
 #define DEBUG 0
-LiquidCrystal lcd(2, 3, 5, 6, 7, 8);
-byte rowPins[ROWS] = {13,12,11,10}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {A1, A0, 9}; //connect to the column pinouts of the keypad
+LiquidCrystal lcd(13, A0, 12, 11, 10, 9);
+byte rowPins[ROWS] = {5,6,7,8}; //connect to the row pinouts of the keypad
+byte colPins[COLS] = {2,3,4}; //connect to the column pinouts of the keypad
 // I2C is using analog pins 4 and 5
 // Arduino analog input A4 = I2C SDA
 // Arduino analog input A5 = I2C SCL
-
+// Serial RXD = pin 0, TXD = pin 1
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 static int ourI2C = 2; // this defines us as I2C port 4!
 char newkey, lastkey, keystate, blink;
 int counter = 0;
-bool lled, okled;
+char lled, okled;
 
 void setup(){
   // initialize LCD screen
@@ -71,16 +71,16 @@ void setup(){
   lcd.print("laoslaser.org");
   
   pinMode(LASERLED, OUTPUT);
-  digitalWrite(LASERLED, HIGH);
+  analogWrite(LASERLED, 0);
   pinMode(OKLED, OUTPUT);
-  digitalWrite(OKLED, LOW);
+  analogWrite(OKLED, 0);
   
   delay(5000);
   lcd.clear();
-  digitalWrite(OKLED, LOW);
-  digitalWrite(LASERLED, LOW);
-  lled = LOW;
-  okled = LOW;
+  analogWrite(OKLED, 0);
+  analogWrite(LASERLED, 255);
+  lled = 0;
+  okled = 0;
   
   Serial.begin(9600);
   Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
@@ -152,21 +152,21 @@ void receiveEvent(int howMany) {
                     }
                     break;
         case 7:	  // Turn on/off ok led
-		    okled = not(okled);
-		    digitalWrite(OKLED, okled);
+		    if (okled == 255) okled = 0; else okled = 255;
+		    analogWrite(OKLED, okled);
                     if (DEBUG) {
                        Serial.println("I2C received OK LED switch");
                     }
 		    break; 
 	case 8:	  // Turn on/off laser led
-		    lled = not(lled);
-		    digitalWrite(LASERLED, lled);
+		    if (okled == 255) okled = 0; else okled=255;
+		    analogWrite(LASERLED, lled);
                     if (DEBUG) {
                        Serial.println("I2C received LASER LED switch");
                     }
 		    break; 
         case 9:    // Tab is blink screen
-                    analogWrite(LCDBACKLIGHT, 0);
+                    //analogWrite(LCDBACKLIGHT, 0);
                     if (DEBUG) {
                        Serial.println("I2C received Blink screen");
                     }

@@ -1,19 +1,11 @@
-ERC report (Sat 02 Jul 2011 11:00:34 AM CEST)
+ERC report (Mon 11 Jul 2011 03:15:37 PM CEST)
 
 ***** Sheet / (Root) 
 ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (2.2000 ",1.4000 "): Cmp #PWR09, Pin 1 (power_in) not driven (Net 12)
+    @ (5.3000 ",1.6500 "): Cmp #PWR05, Pin 1 (power_in) not driven (Net 27)
 ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (3.3000 ",2.2000 "): Cmp IC1, Pin 6 (power_in) not driven (Net 11)
-ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (1.5500 ",2.3000 "): Cmp U1, Pin 7 (unspc) Unconnected
+    @ (3.6500 ",2.8500 "): Cmp P3, Pin 5 (passive) not driven (Net 13)
 ErrType(3): Pin connected to some others pins but no pin to drive it
-    @ (1.7000 ",1.4000 "): Cmp #PWR010, Pin 1 (power_in) not driven (Net 4)
-ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (1.5500 ",2.6000 "): Cmp U1, Pin 10 (unspc) Unconnected
-ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (1.5500 ",2.5000 "): Cmp U1, Pin 9 (unspc) Unconnected
-ErrType(2): Pin not connected (and no connect symbol found on this pin)
-    @ (1.5500 ",2.4000 "): Cmp U1, Pin 8 (unspc) Unconnected
+    @ (6.1000 ",2.6500 "): Cmp #PWR06, Pin 1 (power_in) not driven (Net 1)
 
- >> Errors ERC: 7
+ >> Errors ERC: 3

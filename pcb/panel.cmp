@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by CvPCB (2011-06-28 BZR 3032)-testing date = Tue 12 Jul 2011 08:46:01 PM CEST
+
+BeginCmp
+TimeStamp = /4E0E46F1;
+Reference = BC1;
+ValeurCmp = NPN;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4902;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0F41D3;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E42A2;
+Reference = F1;
+ValeurCmp = CERAMIC_FILTER;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E2533;
+Reference = IC1;
+ValeurCmp = ATMEGA88P-20PU;
+IdModule  = DIP-28__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E2642;
+Reference = P1;
+ValeurCmp = KEYBOARD;
+IdModule  = SIL-7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4171;
+Reference = P2;
+ValeurCmp = SERIAL;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E25F8;
+Reference = P3;
+ValeurCmp = I2C;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E48F8;
+Reference = R1;
+ValeurCmp = 330;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0F41C9;
+Reference = R2;
+ValeurCmp = 330;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4783;
+Reference = R3;
+ValeurCmp = 680;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E45E2;
+Reference = RV1;
+ValeurCmp = 10k;
+IdModule  = POTBIG;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4209;
+Reference = U1;
+ValeurCmp = C;
+IdModule  = C2V10;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4221;
+Reference = U2;
+ValeurCmp = CP;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E44C9;
+Reference = U3;
+ValeurCmp = 2X16DIGIT-DISPLAY;
+IdModule  = SIL-16;
+EndCmp
+
+EndListe

@@ -1,4 +1,4 @@
-eeschema (2011-06-28 BZR 3032)-testing  >> Creation date: Sat 02 Jul 2011 11:05:42 AM CEST
+eeschema (2011-06-28 BZR 3032)-testing  >> Creation date: Mon 11 Jul 2011 04:21:53 PM CEST
 
 #Cmp ( order = Reference )
 | BC1        NPN         
@@ -6,34 +6,34 @@ eeschema (2011-06-28 BZR 3032)-testing  >> Creation date: Sat 02 Jul 2011 11:05:
 | D2         LED         
 | F1         CERAMIC_FILTER
 | IC1        ATMEGA88P-20PU
-| P5         SERIAL      
-| P6         I2C         
-| P7         KEYBOARD    
-| R1         R           
-| R2         680         
-| R3         330         
+| P1         KEYBOARD    
+| P2         SERIAL      
+| P3         I2C         
+| R1         330         
+| R2         330         
+| R3         680         
 | RV1        10k         
-| U1         2X16DIGIT-DISPLAY
-| U2         C           
-| U3         CP          
+| U1         C           
+| U2         CP          
+| U3         2X16DIGIT-DISPLAY
 #End Cmp
 
 #Cmp ( order = Value )
 | 10k          RV1       
-| 2X16DIGIT-DISPLAY U1        
-| 330          R3        
-| 680          R2        
+| 2X16DIGIT-DISPLAY U3        
+| 330          R1        
+| 330          R2        
+| 680          R3        
 | ATMEGA88P-20PU IC1       
-| C            U2        
+| C            U1        
 | CERAMIC_FILTER F1        
-| CP           U3        
-| I2C          P6        
-| KEYBOARD     P7        
+| CP           U2        
+| I2C          P3        
+| KEYBOARD     P1        
 | LED          D1        
 | LED          D2        
 | NPN          BC1       
-| R            R1        
-| SERIAL       P5        
+| SERIAL       P2        
 #End Cmp
 
 #End List
