@@ -56,6 +56,8 @@ static int ourI2C = 2; // this defines us as I2C port 4!
 char newkey, lastkey, keystate, blink;
 int counter = 0;
 char lled, okled;
+int posx = 0;
+int posy = 0;
 
 void setup(){
   // initialize LCD screen
@@ -79,26 +81,22 @@ void setup(){
   lcd.clear();
   analogWrite(OKLED, 0);
   analogWrite(LASERLED, 255);
-  lled = 0;
-  okled = 0;
   
   Serial.begin(9600);
   Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
   Wire.onReceive(receiveEvent);  //register I2C events
   Wire.onRequest(requestEvent);
-  blink = 0;
-  if (DEBUG) {
+  if (DEBUG == 1) {
     Serial.println("LAOS panel setup completed");
   }
 }
-
 
 void loop(){
   char key = keypad.getKey();
   keystate = keypad.getState();
   if (key != NO_KEY) {  // Not NULL
     newkey = key;
-    if (DEBUG) {
+    if (DEBUG == 1) {
       Serial.print("Key pressed: ");
       Serial.println(key);
       lcd.setCursor(0,1);
@@ -106,18 +104,13 @@ void loop(){
     }
     lastkey = 1;
   } 
-  if (blink == 1) {
-    delay(100);
-    blink = 0;
-    analogWrite(LCDBACKLIGHT, 255);
-  }
 }
 
 void requestEvent() {
     if ((lastkey==1) || (keystate == HOLD) || (keystate == PRESSED)) {
       
       Wire.send(newkey);
-      if (DEBUG) {
+      if (DEBUG == 1) {
         if (lastkey==0) {
           Serial.print("I2C send key:");
         } else {
@@ -128,66 +121,97 @@ void requestEvent() {
       lastkey = 0;
     } else {
       Wire.send(0);
-      if (DEBUG) {
-        Serial.println("I2C: no key to send");
+      if (DEBUG == 1) {
+        //Serial.println("I2C: no key to send");
       }  
     }
 }
   
 void receiveEvent(int howMany) {
-  byte y;
+  //lcd.clear();
+  //posx = 0; posy = 0;
   while (howMany--) {
-    y = Wire.receive();
+    byte y = Wire.receive();
     switch (y) {
         case 255:  // LCD Clear cmd
                     lcd.clear();
-                    if (DEBUG) {
+                    posx = 0;
+                    posy = 0;
+                    if (DEBUG == 1) {
                        Serial.println("I2C received LCDClear");
                     }
                     break;
         case 254:  // LCD Home cmd
                     lcd.home();
-                    if (DEBUG) {
+                    posx = 0;
+                    posy = 0;
+                    if (DEBUG == 1) {
                        Serial.println("I2C received LCDHome");
                     }
                     break;
-        case 7:	  // Turn on/off ok led
-		    if (okled == 255) okled = 0; else okled = 255;
-		    analogWrite(OKLED, okled);
-                    if (DEBUG) {
-                       Serial.println("I2C received OK LED switch");
+        case 6:	  // Turn ok led on
+		    analogWrite(OKLED, 255);
+                    if (DEBUG == 1) {
+                       Serial.println("I2C received OK LED on");
+                    }
+		    break;             
+        case 7:	  // Turn ok led off
+		    analogWrite(OKLED, 0);
+                    if (DEBUG == 1) {
+                       Serial.println("I2C received OK LED off");
                     }
 		    break; 
-	case 8:	  // Turn on/off laser led
-		    if (okled == 255) okled = 0; else okled=255;
-		    analogWrite(LASERLED, lled);
-                    if (DEBUG) {
-                       Serial.println("I2C received LASER LED switch");
+	case 8:	  // Turn laser led on
+		    analogWrite(LASERLED, 255);
+                    if (DEBUG == 1) {
+                       Serial.println("I2C received LASER LED on");
                     }
 		    break; 
-        case 9:    // Tab is blink screen
-                    //analogWrite(LCDBACKLIGHT, 0);
-                    if (DEBUG) {
-                       Serial.println("I2C received Blink screen");
+        case 9:    // Turn laser led off
+                    analogWrite(LASERLED, 0);
+                    if (DEBUG == 1) {
+                       Serial.println("I2C received LASER LED off");
                     }
-                    blink = 1;
                     break;
         case 10:  // New line
-                    lcd.setCursor(0,1);
-                    if (DEBUG) {
+                    if (posy == 0) {
+                      lcd.setCursor(0,1);
+                      posy = 1;
+                    } else {
+                      lcd.setCursor(0,0);
+                      posy = 0;
+                    }
+                    if (DEBUG == 1) {
                        Serial.println("I2C received Newline");
                     }
                     break;
         case 13:  // Cariage return
-                    if (DEBUG) {
-                       Serial.println("I2C received Carriave return");
+                    if (DEBUG == 1) {
+                       Serial.println("I2C received Carriage return");
                     }
-                    lcd.setCursor(0,1);
+                    if (posy == 0) {
+                      lcd.setCursor(0,1);
+                      posy = 1;
+                    } else {
+                      lcd.setCursor(0,0);
+                      posy = 0;
+                    }
                     break;
         default:    // all other keys
-                    Serial.print(y);
+                    if (DEBUG == 1) { 
+                        Serial.print(y); 
+                    }
                     if ((y > 31) && (y< 125)) {
+                         if ((posx == 16) && (posy == 0)) {
+                           posx=0; posy=1;
+                           lcd.setCursor(0,1);
+                         } 
+                         if ((posx == 16) && (posy== 1)) {
+                           posx=0; posy=0;
+                           lcd.clear();
+                         }
                          lcd.write(y);
+                         posx++;
                     }
     }
   }
