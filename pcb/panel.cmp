@@ -1,18 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-10-18 BZR 3179)-testing date = Wed 30 Nov 2011 06:53:19 PM CET
-
-BeginCmp
-TimeStamp = /4E0E46F1;
-Reference = BC1;
-ValeurCmp = NPN;
-IdModule  = TO92H;
-EndCmp
-
-BeginCmp
-TimeStamp = /4ED35094;
-Reference = BJ547C1;
-ValeurCmp = NPN;
-IdModule  = TO92H;
-EndCmp
+Cmp-Mod V01 Created by CvPcb (2011-10-18 BZR 3179)-testing date = Wed 30 Nov 2011 07:42:27 PM CET
 
 BeginCmp
 TimeStamp = /4E0E42A2;
@@ -166,6 +152,20 @@ TimeStamp = /4ED0D66B;
 Reference = SW5;
 ValeurCmp = JOYSTICK;
 IdModule  = JOYSTICK;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E46F1;
+Reference = T1;
+ValeurCmp = BC547C;
+IdModule  = TO92H;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED35094;
+Reference = T2;
+ValeurCmp = BC547C;
+IdModule  = TO92H;
 EndCmp
 
 BeginCmp

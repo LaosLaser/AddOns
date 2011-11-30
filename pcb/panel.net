@@ -1,15 +1,5 @@
-# EESchema Netlist Version 1.1 created  Wed 30 Nov 2011 06:53:19 PM CET
+# EESchema Netlist Version 1.1 created  Wed 30 Nov 2011 07:42:27 PM CET
 (
- ( /4E0E46F1 TO92H BC1 NPN
-  ( 1 N-000024 )
-  ( 2 N-000025 )
-  ( 3 GND )
- )
- ( /4ED35094 TO92H BJ547C1 NPN
-  ( 1 N-000013 )
-  ( 2 N-000017 )
-  ( 3 GND )
- )
  ( /4E0E42A2 SIL-3 F1 CERAMIC_FILTER
   ( 1 N-000022 )
   ( 2 GND )
@@ -126,6 +116,16 @@
   ( 4 N-000004 )
   ( 5 N-000029 )
   ( 6 N-000028 )
+ )
+ ( /4E0E46F1 TO92H T1 BC547C
+  ( 1 N-000024 )
+  ( 2 N-000025 )
+  ( 3 GND )
+ )
+ ( /4ED35094 TO92H T2 BC547C
+  ( 1 N-000013 )
+  ( 2 N-000017 )
+  ( 3 GND )
  )
  ( /4E0E4209 C2 U1 100nF
   ( 1 +5V )
