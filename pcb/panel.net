@@ -1,139 +1,165 @@
-# EESchema Netlist Version 1.1 created  Tue 12 Jul 2011 08:46:01 PM CEST
+# EESchema Netlist Version 1.1 created  Wed 30 Nov 2011 06:53:19 PM CET
 (
- ( /4E0E46F1 TO92 BC1 NPN
-  ( 1 N-000004 )
-  ( 2 N-000010 )
+ ( /4E0E46F1 TO92H BC1 NPN
+  ( 1 N-000024 )
+  ( 2 N-000025 )
   ( 3 GND )
  )
- ( /4E0E4902 LED-5MM D1 LED
-  ( 1 +5V )
-  ( 2 N-000008 )
- )
- ( /4E0F41D3 LED-5MM D2 LED
-  ( 1 +5V )
-  ( 2 N-000007 )
+ ( /4ED35094 TO92H BJ547C1 NPN
+  ( 1 N-000013 )
+  ( 2 N-000017 )
+  ( 3 GND )
  )
  ( /4E0E42A2 SIL-3 F1 CERAMIC_FILTER
-  ( 1 N-000014 )
+  ( 1 N-000022 )
   ( 2 GND )
-  ( 3 N-000022 )
+  ( 3 N-000005 )
  )
- ( /4E0E2533 DIP-28__300_ELL IC1 ATMEGA88P-20PU
-  ( 1 N-000030 )
-  ( 2 N-000023 )
-  ( 3 N-000011 )
-  ( 4 N-000012 )
-  ( 5 N-000025 )
-  ( 6 N-000013 )
+ ( /4ED2B5D5 HOLE_2MM H1 MOUNT_HOLE
+ )
+ ( /4ED2B5E1 HOLE_2MM H2 MOUNT_HOLE
+ )
+ ( /4ED2B5DA HOLE_2MM H3 MOUNT_HOLE
+ )
+ ( /4ED2B5DF HOLE_2MM H4 MOUNT_HOLE
+ )
+ ( /4ED2B888 HOLE_2MM H5 MOUNT_HOLE
+ )
+ ( /4ED2B88C HOLE_2MM H6 MOUNT_HOLE
+ )
+ ( /4E0E2533 DIP-28__300_ELL IC1 ATMEGA168-20PU
+  ( 1 N-000023 )
+  ( 2 N-000016 )
+  ( 3 N-000026 )
+  ( 4 N-000030 )
+  ( 5 N-000015 )
+  ( 6 N-000014 )
   ( 7 +5V )
   ( 8 GND )
-  ( 9 N-000014 )
-  ( 10 N-000022 )
-  ( 11 N-000024 )
-  ( 12 N-000006 )
-  ( 13 N-000015 )
-  ( 14 N-000005 )
-  ( 15 N-000016 )
-  ( 16 N-000018 )
-  ( 17 N-000020 )
-  ( 18 N-000021 )
-  ( 19 N-000002 )
+  ( 9 N-000022 )
+  ( 10 N-000005 )
+  ( 11 N-000028 )
+  ( 12 N-000029 )
+  ( 13 N-000004 )
+  ( 14 N-000006 )
+  ( 15 N-000020 )
+  ( 16 N-000019 )
+  ( 17 N-000001 )
+  ( 18 N-000018 )
+  ( 19 N-000008 )
   ( 20 +5V )
   ( 21 +5V )
   ( 22 GND )
-  ( 23 N-000003 )
-  ( 24 N-000009 )
-  ( 25 N-000017 )
-  ( 26 N-000019 )
-  ( 27 N-000028 )
-  ( 28 N-000027 )
+  ( 23 N-000012 )
+  ( 24 N-000003 )
+  ( 25 N-000002 )
+  ( 26 N-000007 )
+  ( 27 N-000010 )
+  ( 28 N-000009 )
  )
- ( /4E0E2642 SIL-7 P1 KEYBOARD
-  ( 1 N-000005 )
-  ( 2 N-000015 )
-  ( 3 N-000006 )
-  ( 4 N-000024 )
-  ( 5 N-000013 )
-  ( 6 N-000025 )
-  ( 7 N-000012 )
- )
- ( /4E0E4171 SIL-5 P2 SERIAL
-  ( 1 +5V )
-  ( 2 N-000011 )
-  ( 3 N-000023 )
-  ( 4 GND )
-  ( 5 N-000030 )
- )
- ( /4E0E25F8 SIL-4 P3 I2C
-  ( 1 +5V )
-  ( 2 N-000027 )
-  ( 3 N-000028 )
-  ( 4 GND )
- )
- ( /4E0E48F8 R4 R1 330
-  ( 1 N-000019 )
-  ( 2 N-000008 )
- )
- ( /4E0F41C9 R4 R2 330
-  ( 1 N-000017 )
-  ( 2 N-000007 )
- )
- ( /4E0E4783 R3 R3 680
-  ( 1 N-000009 )
-  ( 2 N-000010 )
- )
- ( /4E0E45E2 POTBIG RV1 10k
+ ( /4ED000CD SIL-6 P1 CONN_6
   ( 1 GND )
-  ( 2 N-000001 )
+  ( 2 GND )
   ( 3 +5V )
+  ( 4 N-000016 )
+  ( 5 N-000026 )
+  ( 6 N-000027 )
  )
- ( /4E0E4209 C2V10 U1 C
+ ( /4E0E25F8 SIL-4 P2 I2C
+  ( 1 +5V )
+  ( 2 N-000009 )
+  ( 3 N-000010 )
+  ( 4 GND )
+ )
+ ( /4ED33FF7 SIL-1 P3 CONN_1
+  ( 1 GND )
+ )
+ ( /4ED33FFA SIL-1 P4 CONN_1
+  ( 1 GND )
+ )
+ ( /4ED33FFD SIL-1 P5 CONN_1
+  ( 1 N-000007 )
+ )
+ ( /4ED33FFF SIL-1 P6 CONN_1
+  ( 1 N-000007 )
+ )
+ ( /4ED35257 SIL-2 P7 CONN_2
+  ( 1 GND )
+  ( 2 N-000003 )
+ )
+ ( /4E0E4783 R3 R1 680
+  ( 1 N-000002 )
+  ( 2 N-000025 )
+ )
+ ( /4ED35158 R3L R2 680
+  ( 1 N-000012 )
+  ( 2 N-000017 )
+ )
+ ( /4ED0E410 PUSHBUTTON SW1 PUSHPUTTON
+  ( 1 N-000006 )
+  ( 2 N-000006 )
+  ( 3 N-000030 )
+  ( 4 N-000030 )
+ )
+ ( /4ED0E409 PUSHBUTTON SW2 PUSHPUTTON
+  ( 1 N-000006 )
+  ( 2 N-000006 )
+  ( 3 N-000015 )
+  ( 4 N-000015 )
+ )
+ ( /4ED0E3FA PUSHBUTTON SW3 PUSHPUTTON
+  ( 1 N-000006 )
+  ( 2 N-000006 )
+  ( 3 N-000028 )
+  ( 4 N-000028 )
+ )
+ ( /4ED0E428 PUSHBUTTON SW4 PUSHPUTTON
+  ( 1 N-000006 )
+  ( 2 N-000006 )
+  ( 3 N-000029 )
+  ( 4 N-000029 )
+ )
+ ( /4ED0D66B JOYSTICK SW5 JOYSTICK
+  ( 1 N-000014 )
+  ( 2 N-000015 )
+  ( 3 N-000030 )
+  ( 4 N-000004 )
+  ( 5 N-000029 )
+  ( 6 N-000028 )
+ )
+ ( /4E0E4209 C2 U1 100nF
   ( 1 +5V )
   ( 2 GND )
  )
- ( /4E0E4221 C2 U2 CP
+ ( /4E0E4221 CCAP_3.5MM U2 100uF
   ( 1 +5V )
   ( 2 GND )
  )
  ( /4E0E44C9 SIL-16 U3 2X16DIGIT-DISPLAY
   ( 1 GND )
   ( 2 +5V )
-  ( 3 N-000001 )
-  ( 4 N-000002 )
+  ( 3 N-000013 )
+  ( 4 N-000007 )
   ( 5 GND )
-  ( 6 N-000003 )
+  ( 6 N-000020 )
   ( 7 GND )
   ( 8 GND )
   ( 9 GND )
   ( 10 GND )
-  ( 11 N-000021 )
-  ( 12 N-000020 )
+  ( 11 N-000019 )
+  ( 12 N-000001 )
   ( 13 N-000018 )
-  ( 14 N-000016 )
+  ( 14 N-000008 )
   ( 15 +5V )
-  ( 16 N-000004 )
+  ( 16 N-000024 )
+ )
+ ( /4ED001BC C2 U4 100nF
+  ( 1 N-000023 )
+  ( 2 N-000027 )
  )
 )
 *
 { Allowed footprints by component:
-$component D1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D2
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
 $component IC1
  MLF44
 $endlist
@@ -149,12 +175,6 @@ $component R2
  SM0805
  R?-*
 $endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
-$endlist
 $component U1
  SM*
  C?
@@ -163,6 +183,11 @@ $endlist
 $component U2
  CP*
  SM*
+$endlist
+$component U4
+ SM*
+ C?
+ C1-1
 $endlist
 $endfootprintlist
 }

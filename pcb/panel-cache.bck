@@ -1,3 +1,49 @@
-EESchema-DOCLIB  Version 2.0  Date: Sat 02 Jul 2011 11:00:23 AM CEST
+EESchema-DOCLIB  Version 2.0  Date: Sat 26 Nov 2011 02:03:09 PM CET
+#
+$CMP C
+D Condensateur non polarise
+$ENDCMP
+#
+$CMP CAPAPOL
+D Condensateur polarise
+$ENDCMP
+#
+$CMP CERAMIC_FILTER
+D Ceramic filter
+K FILTER
+$ENDCMP
+#
+$CMP CP
+D Condensateur polarise
+$ENDCMP
+#
+$CMP JOYSTICK
+D CODING SWITCH 4 Bits
+K SWITCH
+$ENDCMP
+#
+$CMP NPN
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP POT
+D Potentionmetre
+K R
+$ENDCMP
+#
+$CMP PUSHPUTTON
+D Push Button
+K Switch
+$ENDCMP
+#
+$CMP R
+D Resistance
+K R DEV
+$ENDCMP
+#
+$CMP SW_PUSH
+D Push Button
+K Switch
+$ENDCMP
 #
 #End Doc Library

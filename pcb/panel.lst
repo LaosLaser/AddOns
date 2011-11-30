@@ -1,39 +1,41 @@
-eeschema (2011-06-28 BZR 3032)-testing  >> Creation date: Mon 11 Jul 2011 04:21:53 PM CEST
+eeschema (2011-10-18 BZR 3179)-testing  >> Creation date: Fri 25 Nov 2011 10:58:01 PM CET
 
 #Cmp ( order = Reference )
 | BC1        NPN         
-| D1         LED         
-| D2         LED         
 | F1         CERAMIC_FILTER
-| IC1        ATMEGA88P-20PU
-| P1         KEYBOARD    
-| P2         SERIAL      
-| P3         I2C         
-| R1         330         
-| R2         330         
-| R3         680         
+| IC1        ATMEGA168-20PU
+| P1         CONN_6      
+| P2         I2C         
+| R1         680         
 | RV1        10k         
-| U1         C           
-| U2         CP          
+| SW1        SW_PUSH     
+| SW2        SW_PUSH     
+| SW3        SW_PUSH     
+| SW4        SW_PUSH     
+| SW5        CODING_SWITCH5
+| U1         100nF       
+| U2         100uF       
 | U3         2X16DIGIT-DISPLAY
+| U4         100nF       
 #End Cmp
 
 #Cmp ( order = Value )
+| 100nF        U1        
+| 100nF        U4        
+| 100uF        U2        
 | 10k          RV1       
 | 2X16DIGIT-DISPLAY U3        
-| 330          R1        
-| 330          R2        
-| 680          R3        
-| ATMEGA88P-20PU IC1       
-| C            U1        
+| 680          R1        
+| ATMEGA168-20PU IC1       
 | CERAMIC_FILTER F1        
-| CP           U2        
-| I2C          P3        
-| KEYBOARD     P1        
-| LED          D1        
-| LED          D2        
+| CODING_SWITCH5 SW5       
+| CONN_6       P1        
+| I2C          P2        
 | NPN          BC1       
-| SERIAL       P2        
+| SW_PUSH      SW1       
+| SW_PUSH      SW2       
+| SW_PUSH      SW3       
+| SW_PUSH      SW4       
 #End Cmp
 
 #End List
