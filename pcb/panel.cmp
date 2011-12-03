@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-10-18 BZR 3179)-testing date = Wed 30 Nov 2011 07:42:27 PM CET
+Cmp-Mod V01 Created by CvPcb (2011-10-18 BZR 3179)-testing date = Fri 02 Dec 2011 03:01:12 PM CET
 
 BeginCmp
 TimeStamp = /4E0E42A2;
@@ -106,17 +106,45 @@ IdModule  = SIL-2;
 EndCmp
 
 BeginCmp
-TimeStamp = /4E0E4783;
-Reference = R1;
-ValeurCmp = 680;
-IdModule  = R3;
+TimeStamp = /4ED8BD64;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
 EndCmp
 
 BeginCmp
-TimeStamp = /4ED35158;
-Reference = R2;
+TimeStamp = /4ED8BD5A;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED8BE8B;
+Reference = P10;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED8BE91;
+Reference = P11;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4783;
+Reference = R1;
 ValeurCmp = 680;
 IdModule  = R3L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED8CDC1;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = R6;
 EndCmp
 
 BeginCmp
@@ -157,13 +185,6 @@ EndCmp
 BeginCmp
 TimeStamp = /4E0E46F1;
 Reference = T1;
-ValeurCmp = BC547C;
-IdModule  = TO92H;
-EndCmp
-
-BeginCmp
-TimeStamp = /4ED35094;
-Reference = T2;
 ValeurCmp = BC547C;
 IdModule  = TO92H;
 EndCmp

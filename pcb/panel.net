@@ -1,167 +1,177 @@
-# EESchema Netlist Version 1.1 created  Wed 30 Nov 2011 07:42:27 PM CET
+# EESchema Netlist Version 1.1 created  Fri 02 Dec 2011 03:17:57 PM CET
 (
- ( /4E0E42A2 SIL-3 F1 CERAMIC_FILTER
-  ( 1 N-000022 )
-  ( 2 GND )
-  ( 3 N-000005 )
+ ( /4ED8CDC1 $noname  R2 10K {Lib=R}
+  (    1 +5V )
+  (    2 N-000023 )
  )
- ( /4ED2B5D5 HOLE_2MM H1 MOUNT_HOLE
+ ( /4ED8BE91 $noname  P11 CONN_1 {Lib=CONN_1}
+  (    1 N-000011 )
  )
- ( /4ED2B5E1 HOLE_2MM H2 MOUNT_HOLE
+ ( /4ED8BE8B $noname  P10 CONN_1 {Lib=CONN_1}
+  (    1 N-000011 )
  )
- ( /4ED2B5DA HOLE_2MM H3 MOUNT_HOLE
+ ( /4ED8BD64 $noname  P8 CONN_1 {Lib=CONN_1}
+  (    1 N-000003 )
  )
- ( /4ED2B5DF HOLE_2MM H4 MOUNT_HOLE
+ ( /4ED8BD5A $noname  P9 CONN_1 {Lib=CONN_1}
+  (    1 N-000003 )
  )
- ( /4ED2B888 HOLE_2MM H5 MOUNT_HOLE
+ ( /4E0E4783 $noname  R1 680 {Lib=R}
+  (    1 N-000001 )
+  (    2 N-000013 )
  )
- ( /4ED2B88C HOLE_2MM H6 MOUNT_HOLE
+ ( /4ED35257 $noname  P7 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 N-000002 )
  )
- ( /4E0E2533 DIP-28__300_ELL IC1 ATMEGA168-20PU
-  ( 1 N-000023 )
-  ( 2 N-000016 )
-  ( 3 N-000026 )
-  ( 4 N-000030 )
-  ( 5 N-000015 )
-  ( 6 N-000014 )
-  ( 7 +5V )
-  ( 8 GND )
-  ( 9 N-000022 )
-  ( 10 N-000005 )
-  ( 11 N-000028 )
-  ( 12 N-000029 )
-  ( 13 N-000004 )
-  ( 14 N-000006 )
-  ( 15 N-000020 )
-  ( 16 N-000019 )
-  ( 17 N-000001 )
-  ( 18 N-000018 )
-  ( 19 N-000008 )
-  ( 20 +5V )
-  ( 21 +5V )
-  ( 22 GND )
-  ( 23 N-000012 )
-  ( 24 N-000003 )
-  ( 25 N-000002 )
-  ( 26 N-000007 )
-  ( 27 N-000010 )
-  ( 28 N-000009 )
+ ( /4E0E2533 MLF44  IC1 ATMEGA168-20PU {Lib=ATMEGA88P-20PU}
+  (    1 N-000023 )
+  (    2 N-000021 )
+  (    3 N-000006 )
+  (    4 N-000005 )
+  (    5 N-000029 )
+  (    6 N-000019 )
+  (    7 +5V )
+  (    8 GND )
+  (    9 N-000015 )
+  (   10 N-000014 )
+  (   11 N-000004 )
+  (   12 N-000020 )
+  (   13 N-000018 )
+  (   14 N-000028 )
+  (   15 N-000001 )
+  (   16 N-000009 )
+  (   17 N-000012 )
+  (   18 N-000008 )
+  (   19 N-000017 )
+  (   20 +5V )
+  (   21 +5V )
+  (   22 GND )
+  (   23 N-000003 )
+  (   24 N-000002 )
+  (   25 N-000011 )
+  (   26 N-000026 )
+  (   27 N-000025 )
+  (   28 N-000027 )
  )
- ( /4ED000CD SIL-6 P1 CONN_6
-  ( 1 GND )
-  ( 2 GND )
-  ( 3 +5V )
-  ( 4 N-000016 )
-  ( 5 N-000026 )
-  ( 6 N-000027 )
+ ( /4ED33FFF $noname  P6 CONN_1 {Lib=CONN_1}
+  (    1 N-000026 )
  )
- ( /4E0E25F8 SIL-4 P2 I2C
-  ( 1 +5V )
-  ( 2 N-000009 )
-  ( 3 N-000010 )
-  ( 4 GND )
+ ( /4ED33FFD $noname  P5 CONN_1 {Lib=CONN_1}
+  (    1 N-000026 )
  )
- ( /4ED33FF7 SIL-1 P3 CONN_1
-  ( 1 GND )
+ ( /4ED33FFA $noname  P4 CONN_1 {Lib=CONN_1}
+  (    1 GND )
  )
- ( /4ED33FFA SIL-1 P4 CONN_1
-  ( 1 GND )
+ ( /4ED33FF7 $noname  P3 CONN_1 {Lib=CONN_1}
+  (    1 GND )
  )
- ( /4ED33FFD SIL-1 P5 CONN_1
-  ( 1 N-000007 )
+ ( /4ED2B88C $noname  H6 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
- ( /4ED33FFF SIL-1 P6 CONN_1
-  ( 1 N-000007 )
+ ( /4ED2B888 $noname  H5 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
- ( /4ED35257 SIL-2 P7 CONN_2
-  ( 1 GND )
-  ( 2 N-000003 )
+ ( /4ED2B5E1 $noname  H2 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
- ( /4E0E4783 R3 R1 680
-  ( 1 N-000002 )
-  ( 2 N-000025 )
+ ( /4ED2B5DF $noname  H4 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
- ( /4ED35158 R3L R2 680
-  ( 1 N-000012 )
-  ( 2 N-000017 )
+ ( /4ED2B5DA $noname  H3 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
- ( /4ED0E410 PUSHBUTTON SW1 PUSHPUTTON
-  ( 1 N-000006 )
-  ( 2 N-000006 )
-  ( 3 N-000030 )
-  ( 4 N-000030 )
+ ( /4ED2B5D5 $noname  H1 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
- ( /4ED0E409 PUSHBUTTON SW2 PUSHPUTTON
-  ( 1 N-000006 )
-  ( 2 N-000006 )
-  ( 3 N-000015 )
-  ( 4 N-000015 )
+ ( /4ED0E428 $noname  SW4 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 N-000028 )
+  (    2 N-000028 )
+  (    3 N-000020 )
+  (    4 N-000020 )
  )
- ( /4ED0E3FA PUSHBUTTON SW3 PUSHPUTTON
-  ( 1 N-000006 )
-  ( 2 N-000006 )
-  ( 3 N-000028 )
-  ( 4 N-000028 )
+ ( /4ED0E410 $noname  SW1 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 N-000028 )
+  (    2 N-000028 )
+  (    3 N-000005 )
+  (    4 N-000005 )
  )
- ( /4ED0E428 PUSHBUTTON SW4 PUSHPUTTON
-  ( 1 N-000006 )
-  ( 2 N-000006 )
-  ( 3 N-000029 )
-  ( 4 N-000029 )
+ ( /4ED0E409 $noname  SW2 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 N-000028 )
+  (    2 N-000028 )
+  (    3 N-000029 )
+  (    4 N-000029 )
  )
- ( /4ED0D66B JOYSTICK SW5 JOYSTICK
-  ( 1 N-000014 )
-  ( 2 N-000015 )
-  ( 3 N-000030 )
-  ( 4 N-000004 )
-  ( 5 N-000029 )
-  ( 6 N-000028 )
+ ( /4ED0E3FA $noname  SW3 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 N-000028 )
+  (    2 N-000028 )
+  (    3 N-000004 )
+  (    4 N-000004 )
  )
- ( /4E0E46F1 TO92H T1 BC547C
-  ( 1 N-000024 )
-  ( 2 N-000025 )
-  ( 3 GND )
+ ( /4ED0D66B $noname  SW5 JOYSTICK {Lib=JOYSTICK}
+  (    1 N-000019 )
+  (    2 N-000029 )
+  (    3 N-000005 )
+  (    4 N-000018 )
+  (    5 N-000020 )
+  (    6 N-000004 )
  )
- ( /4ED35094 TO92H T2 BC547C
-  ( 1 N-000013 )
-  ( 2 N-000017 )
-  ( 3 GND )
+ ( /4ED001BC $noname  U4 100nF {Lib=C}
+  (    1 N-000023 )
+  (    2 N-000022 )
  )
- ( /4E0E4209 C2 U1 100nF
-  ( 1 +5V )
-  ( 2 GND )
+ ( /4ED000CD $noname  P1 CONN_6 {Lib=CONN_6}
+  (    1 GND )
+  (    2 GND )
+  (    3 +5V )
+  (    4 N-000021 )
+  (    5 N-000006 )
+  (    6 N-000022 )
  )
- ( /4E0E4221 CCAP_3.5MM U2 100uF
-  ( 1 +5V )
-  ( 2 GND )
+ ( /4E0E46F1 $noname  T1 BC547C {Lib=NPN}
+  (    1 N-000016 )
+  (    2 N-000013 )
+  (    3 GND )
  )
- ( /4E0E44C9 SIL-16 U3 2X16DIGIT-DISPLAY
-  ( 1 GND )
-  ( 2 +5V )
-  ( 3 N-000013 )
-  ( 4 N-000007 )
-  ( 5 GND )
-  ( 6 N-000020 )
-  ( 7 GND )
-  ( 8 GND )
-  ( 9 GND )
-  ( 10 GND )
-  ( 11 N-000019 )
-  ( 12 N-000001 )
-  ( 13 N-000018 )
-  ( 14 N-000008 )
-  ( 15 +5V )
-  ( 16 N-000024 )
+ ( /4E0E44C9 $noname  U3 2X16DIGIT-DISPLAY {Lib=2X16DIGIT-DISPLAY}
+  (    1 GND )
+  (    2 +5V )
+  (    3 N-000009 )
+  (    4 N-000026 )
+  (    5 GND )
+  (    6 N-000011 )
+  (    7 GND )
+  (    8 GND )
+  (    9 GND )
+  (   10 GND )
+  (   11 N-000003 )
+  (   12 N-000012 )
+  (   13 N-000008 )
+  (   14 N-000017 )
+  (   15 +5V )
+  (   16 N-000016 )
  )
- ( /4ED001BC C2 U4 100nF
-  ( 1 N-000023 )
-  ( 2 N-000027 )
+ ( /4E0E42A2 $noname  F1 CERAMIC_FILTER {Lib=CERAMIC_FILTER}
+  (    1 N-000015 )
+  (    2 GND )
+  (    3 N-000014 )
+ )
+ ( /4E0E4221 $noname  U2 100uF {Lib=CP}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4E0E4209 $noname  U1 100nF {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4E0E25F8 $noname  P2 I2C {Lib=CONN_4}
+  (    1 +5V )
+  (    2 N-000027 )
+  (    3 N-000025 )
+  (    4 GND )
  )
 )
 *
 { Allowed footprints by component:
-$component IC1
- MLF44
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
 $component R1
  R?
@@ -169,13 +179,10 @@ $component R1
  SM0805
  R?-*
 $endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
+$component IC1
+ MLF44
 $endlist
-$component U1
+$component U4
  SM*
  C?
  C1-1
@@ -184,10 +191,143 @@ $component U2
  CP*
  SM*
 $endlist
-$component U4
+$component U1
  SM*
  C?
  C1-1
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "" ""
+ IC1 15
+ R1 1
+Net 2 "" ""
+ P7 2
+ IC1 24
+Net 3 "" ""
+ P9 1
+ P8 1
+ U3 11
+ IC1 23
+Net 4 "" ""
+ IC1 11
+ SW5 6
+ SW3 4
+ SW3 3
+Net 5 "" ""
+ IC1 4
+ SW1 3
+ SW1 4
+ SW5 3
+Net 6 "" ""
+ P1 5
+ IC1 3
+Net 7 "GND" "GND"
+ P1 1
+ P1 2
+ F1 2
+ U2 2
+ U1 2
+ IC1 8
+ U3 5
+ U3 7
+ P7 1
+ IC1 22
+ P3 1
+ U3 1
+ U3 8
+ U3 9
+ P4 1
+ T1 3
+ U3 10
+ P2 4
+Net 8 "" ""
+ U3 13
+ IC1 18
+Net 9 "" ""
+ IC1 16
+ U3 3
+Net 10 "+5V" "+5V"
+ IC1 21
+ IC1 20
+ IC1 7
+ R2 1
+ U3 2
+ U3 15
+ U2 1
+ U1 1
+ P1 3
+ P2 1
+Net 11 "" ""
+ P10 1
+ P11 1
+ U3 6
+ IC1 25
+Net 12 "" ""
+ IC1 17
+ U3 12
+Net 13 "" ""
+ R1 2
+ T1 2
+Net 14 "" ""
+ IC1 10
+ F1 3
+Net 15 "" ""
+ IC1 9
+ F1 1
+Net 16 "" ""
+ T1 1
+ U3 16
+Net 17 "" ""
+ IC1 19
+ U3 14
+Net 18 "" ""
+ SW5 4
+ IC1 13
+Net 19 "" ""
+ SW5 1
+ IC1 6
+Net 20 "" ""
+ IC1 12
+ SW5 5
+ SW4 3
+ SW4 4
+Net 21 "" ""
+ P1 4
+ IC1 2
+Net 22 "" ""
+ P1 6
+ U4 2
+Net 23 "" ""
+ U4 1
+ R2 2
+ IC1 1
+Net 25 "" ""
+ P2 3
+ IC1 27
+Net 26 "" ""
+ P6 1
+ U3 4
+ P5 1
+ IC1 26
+Net 27 "" ""
+ P2 2
+ IC1 28
+Net 28 "" ""
+ SW4 2
+ SW1 1
+ SW1 2
+ SW2 1
+ SW2 2
+ SW3 1
+ SW3 2
+ IC1 14
+ SW4 1
+Net 29 "" ""
+ IC1 5
+ SW2 3
+ SW2 4
+ SW5 2
+}
+#End
