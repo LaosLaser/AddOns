@@ -33,10 +33,10 @@
 const byte ROWS = 4; //four rows
 const byte COLS = 3; //three columns
 char keys[ROWS][COLS] = {
-  {'1','2','3'},
-  {'4','5','6'},
-  {'7','8','9'},
-  {'*','0','#'}
+  {'7','4','1'},
+  {'8','5','2'},
+  {'*','6','#'},
+  {'9','0','3'}
 };
 
 // define Arduino pins

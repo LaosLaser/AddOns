@@ -33,8 +33,8 @@
 const byte ROWS = 2; 
 const byte COLS = 5; 
 char keys[ROWS][COLS] = {
-  {'6','8','4','5','2'},
-  {'*','#','7','3','1'}
+  {'2','6','8','5','4'},
+  {'9','3','0','1','7'}
 };
 
 // define Arduino pins
