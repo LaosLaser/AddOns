@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Fri 02 Dec 2011 03:23:29 PM CET
+PCBNEW-BOARD Version 1 date Tue 06 Dec 2011 04:18:03 PM CET
 
 # Created by Pcbnew(2011-10-18 BZR 3179)-testing
 
@@ -10,7 +10,7 @@ EnabledLayers 1FFF8001
 Links 74
 NoConn 0
 Di 14568 14602 50325 44832
-Ndraw 6
+Ndraw 8
 Ntrack 281
 Nzone 0
 BoardThickness 630
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11700 8267
 Title ""
-Date "2 dec 2011"
+Date "6 dec 2011"
 Rev "0.2"
 Comp ""
 Comment1 ""
@@ -59,7 +59,7 @@ PadSize 600 600
 PadDrill 320
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 1) (usegerberextensions true) (excludeedgelayer false) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 2) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 271351809) (usegerberextensions true) (excludeedgelayer false) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory panel-rev0.3/))
 $EndSETUP
 
 $EQUIPOT
@@ -1750,6 +1750,18 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  R6
 $TEXTPCB
+Te "LAOS"
+nl "I2C"
+nl "rev 0.3"
+Po 35200 38200 600 800 120 0
+De 21 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "www.laoslaser.org"
+Po 37200 42200 600 800 120 0
+De 21 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
 Te "www.laoslaser.org"
 Po 46250 35200 600 800 120 900
 De 0 0 0 Normal C
@@ -2070,11 +2082,11 @@ Po 0 16950 37950 17450 37950 197 -1
 De 0 0 8 0 400000
 Po 0 20750 30500 20750 26800 197 -1
 De 0 0 8 0 800000
-Po 0 19250 32100 20750 30500 197 -1
+Po 0 19600 32500 20750 30500 197 -1
 De 0 0 8 0 0
-Po 0 19250 37000 19250 32100 197 -1
+Po 0 19600 37400 19600 32500 197 -1
 De 0 0 8 0 0
-Po 0 18500 37650 19250 37000 197 -1
+Po 0 18500 37650 19600 37400 197 -1
 De 0 0 8 0 0
 Po 0 17750 37650 18500 37650 197 -1
 De 0 0 8 0 0
@@ -2202,11 +2214,11 @@ Po 0 16950 36950 18550 36950 197 -1
 De 0 0 21 0 400000
 Po 0 19750 30150 19750 26800 197 -1
 De 0 0 21 0 800000
-Po 0 18825 30975 19750 30150 197 -1
+Po 0 19000 32000 19750 30150 197 -1
 De 0 0 21 0 0
-Po 0 18825 36575 18825 30975 197 -1
+Po 0 19000 36600 19000 32000 197 -1
 De 0 0 21 0 0
-Po 0 18550 36950 18825 36575 197 -1
+Po 0 18550 36950 19000 36600 197 -1
 De 0 0 21 0 0
 Po 0 18250 38200 18250 38500 197 -1
 De 0 0 22 0 400000
@@ -2218,11 +2230,11 @@ Po 0 18800 28200 18800 26850 197 -1
 De 0 0 23 0 400000
 Po 0 18800 26850 18750 26800 197 -1
 De 0 0 23 0 800000
-Po 0 18250 36200 18250 30850 197 -1
+Po 0 18250 36200 18400 30800 197 -1
 De 0 0 23 0 400000
 Po 0 18750 30350 18750 26800 197 -1
 De 0 0 23 0 800000
-Po 0 18250 30850 18750 30350 197 -1
+Po 0 18400 30800 18750 30350 197 -1
 De 0 0 23 0 0
 Po 0 17000 22750 19650 22800 197 -1
 De 0 0 24 0 400000
@@ -2248,6 +2260,14 @@ Po 0 41200 16782 41150 16732 197 -1
 De 0 0 25 0 800000
 Po 0 17000 23750 18750 23800 197 -1
 De 0 0 26 0 C00000
+Po 0 25296 32874 25296 33104 197 -1
+De 0 0 27 0 400000
+Po 0 23400 36490 25296 38386 197 -1
+De 0 0 27 0 800000
+Po 0 23400 35000 23400 36490 197 -1
+De 0 0 27 0 0
+Po 0 25296 33104 23400 35000 197 -1
+De 0 0 27 0 0
 Po 0 37696 38386 42618 38386 197 -1
 De 0 0 27 0 C00000
 Po 0 37696 32874 42618 32874 197 -1
@@ -2306,14 +2326,6 @@ Po 0 20374 38386 25296 38386 197 -1
 De 15 0 27 0 C00000
 Po 0 20374 32874 25296 32874 197 -1
 De 15 0 27 0 C00000
-Po 0 20374 38386 20374 36774 197 -1
-De 0 0 27 0 400000
-Po 0 19650 33773 20374 32874 197 -1
-De 0 0 27 0 800000
-Po 0 19650 36025 19650 33773 197 -1
-De 0 0 27 0 0
-Po 0 20374 36774 19650 36025 197 -1
-De 0 0 27 0 0
 Po 0 25296 40354 25446 40354 197 -1
 De 0 0 28 0 400000
 Po 0 25446 40354 27900 37900 197 -1
@@ -3466,23 +3478,8 @@ $POLYSCORNERS
 18733 38732 0 0
 18859 38608 0 0
 18969 38344 0 0
-18969 38058 0 0
-18939 37986 0 0
-19605 37410 0 0
-19618 37392 0 0
-19633 37383 0 0
-19677 37317 0 0
-19734 37244 0 0
-19739 37224 0 0
-19751 37207 0 0
-19769 37115 0 0
-19790 37039 0 0
-19787 37021 0 0
-19792 37000 0 0
-19792 36952 0 0
-19832 36993 0 0
-19832 37744 0 0
-19665 37912 0 0
+18969 38099 0 0
+19651 37944 0 0
 19537 38219 0 0
 19537 38421 0 0
 18842 39117 0 0

@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sat 03 Dec 2011 03:25:42 PM CET
+PCBNEW-BOARD Version 1 date Wed 07 Dec 2011 09:00:58 AM CET
 
 # Created by Pcbnew(2011-10-18 BZR 3179)-testing
 
@@ -10,7 +10,7 @@ EnabledLayers 1FFF8001
 Links 74
 NoConn 0
 Di 14568 14602 50325 44832
-Ndraw 6
+Ndraw 8
 Ntrack 281
 Nzone 0
 BoardThickness 630
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11700 8267
 Title ""
-Date "3 dec 2011"
+Date "7 dec 2011"
 Rev "0.2"
 Comp ""
 Comment1 ""
@@ -59,7 +59,7 @@ PadSize 600 600
 PadDrill 320
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 1) (usegerberextensions true) (excludeedgelayer false) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 2) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 536838145) (usegerberextensions true) (excludeedgelayer false) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory panel-rev0.3/))
 $EndSETUP
 
 $EQUIPOT
@@ -1749,6 +1749,18 @@ Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  R6
+$TEXTPCB
+Te "LAOS"
+nl "I2C"
+nl "rev 0.3"
+Po 35200 38200 600 800 120 0
+De 21 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "www.laoslaser.org"
+Po 37200 42200 600 800 120 0
+De 21 1 0 Normal C
+$EndTEXTPCB
 $TEXTPCB
 Te "www.laoslaser.org"
 Po 46250 35200 600 800 120 900
