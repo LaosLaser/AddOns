@@ -57,7 +57,13 @@ int posx = 0;
 int posy = 0;
 
 void setup(){
+  Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
+  Wire.onReceive(receiveEvent);  //register I2C events
+  Wire.onRequest(requestEvent);
   // initialize LCD screen
+  // setPwmFrequency(LCDCONTRAST, 1);
+  TCCR1B = TCCR1B & 0b11111000 | 0x01;
+
   pinMode(LCDBACKLIGHT, OUTPUT);
   analogWrite(LCDBACKLIGHT, 255);
   pinMode(LCDCONTRAST, OUTPUT);
@@ -66,19 +72,17 @@ void setup(){
   lcd.begin(16, 2);
   lcd.noCursor();
   lcd.noAutoscroll();
-  lcd.clear();
   lcd.print("I2C laser-panel");
   lcd.setCursor(0,1);
   lcd.print("laoslaser.org");
-  
-  delay(5000);
-  lcd.clear();
- 
-  Serial.begin(9600);
-  Wire.begin(ourI2C); // start Wire library as I2C-Bus Client
-  Wire.onReceive(receiveEvent);  //register I2C events
-  Wire.onRequest(requestEvent);
   if (DEBUG == 1) {
+    lcd.clear();
+    delay(5000);
+    lcd.clear();
+  }
+
+  if (DEBUG == 1) {
+    Serial.begin(9600);
     Serial.println("LAOS panel setup completed");
   }
 }
