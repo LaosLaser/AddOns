@@ -1,0 +1,11 @@
+ERC report (Mon 28 Nov 2011 10:25:48 AM CET)
+
+***** Sheet /
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (3.1500 ",1.7500 "): Pin 6 (power_in) of component IC1 is not driven (Net 24).
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (1.8500 ",4.1500 "): Pin 1 (power_in) of component #PWR05 is not driven (Net 9).
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (3.8500 ",0.9000 "): Pin 1 (power_in) of component #PWR04 is not driven (Net 8).
+
+ >> Errors ERC: 0
