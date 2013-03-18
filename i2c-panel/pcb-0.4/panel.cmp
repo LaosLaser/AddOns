@@ -1,4 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Thu 14 Mar 2013 19:49:37 CET
+Cmp-Mod V01 Genere par PcbNew le Mon 18 Mar 2013 21:10:28 CET
 
 BeginCmp
 TimeStamp = /4E0E42A2;
@@ -11,42 +11,42 @@ BeginCmp
 TimeStamp = /4ED2B5D5;
 Reference = H1;
 ValeurCmp = MOUNT_HOLE;
-IdModule  = HOLE_2MM;
+IdModule  = HOLE_3MM;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ED2B5E1;
 Reference = H2;
 ValeurCmp = MOUNT_HOLE;
-IdModule  = HOLE_2MM;
+IdModule  = HOLE_3MM;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ED2B5DA;
 Reference = H3;
 ValeurCmp = MOUNT_HOLE;
-IdModule  = HOLE_2MM;
+IdModule  = HOLE_3MM;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ED2B5DF;
 Reference = H4;
 ValeurCmp = MOUNT_HOLE;
-IdModule  = HOLE_2MM;
+IdModule  = HOLE_3MM;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ED2B888;
 Reference = H5;
 ValeurCmp = MOUNT_HOLE;
-IdModule  = HOLE_2MM;
+IdModule  = HOLE_3MM;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ED2B88C;
 Reference = H6;
 ValeurCmp = MOUNT_HOLE;
-IdModule  = HOLE_2MM;
+IdModule  = HOLE_3MM;
 EndCmp
 
 BeginCmp
