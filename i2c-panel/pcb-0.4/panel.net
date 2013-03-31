@@ -1,0 +1,321 @@
+# EESchema Netlist Version 1.1 created  Sun 31 Mar 2013 15:50:01 CEST
+(
+ ( /51583EEB HOLE_3MM  H7 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /51583EE9 HOLE_3MM  H8 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /514EBF71 SIL-1  P4 AVR-ISP-6 {Lib=AVR-ISP-6}
+  (    1 /LCD_DB6 )
+  (    2 +5V )
+  (    3 /LCD_DB7 )
+  (    4 /LCD_DB5 )
+  (    5 /RESET )
+  (    6 GND )
+ )
+ ( /514EBE7E SIL-4  P2 I2C {Lib=CONN_4}
+  (    1 +5V )
+  (    2 /SCL )
+  (    3 /SDA )
+  (    4 GND )
+ )
+ ( /514EBD3F TO92DGS  Q4 BS270 {Lib=FET_N}
+  (    D N-000027 )
+  (    G /LCD_Backlight )
+  (    S GND )
+ )
+ ( /4E0E2533 DIP-28__300_ELL  IC1 ATMEGA168-20PU {Lib=ATMEGA88P-20PU}
+  (    1 /RESET )
+  (    2 /RXD )
+  (    3 /TXD )
+  (    4 /B_Up_/_J_Down )
+  (    5 /B_Down_/_J_Left )
+  (    6 /J_Up )
+  (    7 +5V )
+  (    8 GND )
+  (    9 N-000024 )
+  (   10 N-000014 )
+  (   11 /B_Enter_/_J_Middle )
+  (   12 /B_Esc_/_J_Right )
+  (   13 /Joystick_Common )
+  (   14 /Buttons_Common )
+  (   15 /LCD_Backlight )
+  (   16 /LCD_Contrast )
+  (   17 /LCD_DB5 )
+  (   18 /LCD_DB6 )
+  (   19 /LCD_DB7 )
+  (   20 +5V )
+  (   21 +5V )
+  (   22 GND )
+  (   23 /LCD_DB4 )
+  (   24 /Buzzer/Jumper )
+  (   25 /LCD_E )
+  (   26 /LCD_RS )
+  (   27 /SDA )
+  (   28 /SCL )
+ )
+ ( /514EBB3A SIL-1  P3 CONN_2 {Lib=CONN_2}
+  (    1 N-000007 )
+  (    2 +5V )
+ )
+ ( /514EBB20 TO92DGS  Q1 BS270 {Lib=FET_N}
+  (    D N-000007 )
+  (    G /Buzzer/Jumper )
+  (    S GND )
+ )
+ ( /4ED8CDC1 R4  R2 10K {Lib=R}
+  (    1 +5V )
+  (    2 /RESET )
+ )
+ ( /4ED35257 SIL-2  P7 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 /Buzzer/Jumper )
+ )
+ ( /4ED2B88C HOLE_3MM  H6 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /4ED2B888 HOLE_3MM  H5 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /4ED2B5E1 HOLE_3MM  H2 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /4ED2B5DF HOLE_3MM  H4 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /4ED2B5DA HOLE_3MM  H3 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /4ED2B5D5 HOLE_3MM  H1 MOUNT_HOLE {Lib=MOUNT_HOLE}
+ )
+ ( /4ED0E428 PUSHBUTTON  SW4 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 /Buttons_Common )
+  (    2 /Buttons_Common )
+  (    3 /B_Esc_/_J_Right )
+  (    4 /B_Esc_/_J_Right )
+ )
+ ( /4ED0E410 PUSHBUTTON  SW1 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 /Buttons_Common )
+  (    2 /Buttons_Common )
+  (    3 /B_Up_/_J_Down )
+  (    4 /B_Up_/_J_Down )
+ )
+ ( /4ED0E409 PUSHBUTTON  SW2 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 /Buttons_Common )
+  (    2 /Buttons_Common )
+  (    3 /B_Down_/_J_Left )
+  (    4 /B_Down_/_J_Left )
+ )
+ ( /4ED0E3FA PUSHBUTTON  SW3 PUSHPUTTON {Lib=PUSHPUTTON}
+  (    1 /Buttons_Common )
+  (    2 /Buttons_Common )
+  (    3 /B_Enter_/_J_Middle )
+  (    4 /B_Enter_/_J_Middle )
+ )
+ ( /4ED0D66B JOYSTICK_FLIPPED_RIGHT  SW5 JOYSTICK {Lib=JOYSTICK}
+  (    1 /J_Up )
+  (    2 /B_Down_/_J_Left )
+  (    3 /B_Up_/_J_Down )
+  (    4 /Joystick_Common )
+  (    5 /B_Esc_/_J_Right )
+  (    6 /B_Enter_/_J_Middle )
+ )
+ ( /4ED001BC C2  U4 100nF {Lib=C}
+  (    1 /RESET )
+  (    2 /RTS )
+ )
+ ( /4ED000CD SIL-6  P1 CONN_6 {Lib=CONN_6}
+  (    1 GND )
+  (    2 GND )
+  (    3 +5V )
+  (    4 /RXD )
+  (    5 /TXD )
+  (    6 /RTS )
+ )
+ ( /4E0E44C9 SIL-16  U3 2X16DIGIT-DISPLAY {Lib=2X16DIGIT-DISPLAY}
+  (    1 GND )
+  (    2 +5V )
+  (    3 /LCD_Contrast )
+  (    4 /LCD_RS )
+  (    5 GND )
+  (    6 /LCD_E )
+  (    7 GND )
+  (    8 GND )
+  (    9 GND )
+  (   10 GND )
+  (   11 /LCD_DB4 )
+  (   12 /LCD_DB5 )
+  (   13 /LCD_DB6 )
+  (   14 /LCD_DB7 )
+  (   15 +5V )
+  (   16 N-000027 )
+ )
+ ( /4E0E42A2 SIL-3  F1 CERAMIC_FILTER {Lib=CERAMIC_FILTER}
+  (    1 N-000024 )
+  (    2 GND )
+  (    3 N-000014 )
+ )
+ ( /4E0E4221 CCAP_3.5MM  U2 100uF {Lib=CP}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4E0E4209 C2  U1 100nF {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component IC1
+ MLF44
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component U4
+ SM*
+ C?
+ C1-1
+$endlist
+$component U2
+ CP*
+ SM*
+$endlist
+$component U1
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/J Up" "J Up"
+ IC1 6
+ SW5 1
+Net 2 "/Buttons Common" "Buttons Common"
+ IC1 14
+ SW3 1
+ SW3 2
+ SW1 2
+ SW4 1
+ SW4 2
+ SW2 1
+ SW2 2
+ SW1 1
+Net 3 "/Joystick Common" "Joystick Common"
+ IC1 13
+ SW5 4
+Net 4 "/B Esc / J Right" "B Esc / J Right"
+ SW5 5
+ SW4 4
+ IC1 12
+ SW4 3
+Net 5 "/B Enter / J Middle" "B Enter / J Middle"
+ IC1 11
+ SW3 3
+ SW5 6
+ SW3 4
+Net 6 "/RESET" "RESET"
+ U4 1
+ R2 2
+ P4 5
+ IC1 1
+Net 7 "" ""
+ P3 1
+ Q1 D
+Net 8 "/RTS" "RTS"
+ U4 2
+ P1 6
+Net 9 "/TXD" "TXD"
+ P1 5
+ IC1 3
+Net 10 "/RXD" "RXD"
+ P1 4
+ IC1 2
+Net 11 "/LCD Contrast" "LCD Contrast"
+ U3 3
+ IC1 16
+Net 12 "/LCD DB6" "LCD DB6"
+ U3 13
+ IC1 18
+ P4 1
+Net 13 "+5V" "+5V"
+ R2 1
+ P2 1
+ IC1 7
+ P4 2
+ P3 2
+ IC1 20
+ IC1 21
+ U3 2
+ U3 15
+ P1 3
+ U2 1
+ U1 1
+Net 14 "" ""
+ F1 3
+ IC1 10
+Net 15 "GND" "GND"
+ P1 1
+ U1 2
+ P1 2
+ U3 1
+ Q1 S
+ P4 6
+ P2 4
+ Q4 S
+ IC1 8
+ IC1 22
+ U3 9
+ U3 8
+ U3 7
+ U3 5
+ P7 1
+ U2 2
+ U3 10
+ F1 2
+Net 16 "/LCD DB7" "LCD DB7"
+ P4 3
+ IC1 19
+ U3 14
+Net 17 "/LCD DB5" "LCD DB5"
+ IC1 17
+ P4 4
+ U3 12
+Net 18 "/LCD DB4" "LCD DB4"
+ U3 11
+ IC1 23
+Net 19 "/LCD E" "LCD E"
+ U3 6
+ IC1 25
+Net 20 "/LCD RS" "LCD RS"
+ U3 4
+ IC1 26
+Net 21 "/SDA" "SDA"
+ IC1 27
+ P2 3
+Net 22 "/SCL" "SCL"
+ IC1 28
+ P2 2
+Net 23 "/LCD Backlight" "LCD Backlight"
+ IC1 15
+ Q4 G
+Net 24 "" ""
+ IC1 9
+ F1 1
+Net 25 "/B Up / J Down" "B Up / J Down"
+ SW5 3
+ SW1 3
+ SW1 4
+ IC1 4
+Net 26 "/B Down / J Left" "B Down / J Left"
+ SW2 3
+ SW2 4
+ SW5 2
+ IC1 5
+Net 27 "" ""
+ U3 16
+ Q4 D
+Net 28 "/Buzzer/Jumper" "Buzzer/Jumper"
+ IC1 24
+ P7 2
+ Q1 G
+}
+#End

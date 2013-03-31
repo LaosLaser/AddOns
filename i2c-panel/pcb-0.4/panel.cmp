@@ -1,0 +1,220 @@
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sun 24 Mar 2013 10:29:45 CET
+
+BeginCmp
+TimeStamp = /4E0E42A2;
+Reference = F1;
+ValeurCmp = CERAMIC_FILTER;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED2B5D5;
+Reference = H1;
+ValeurCmp = MOUNT_HOLE;
+IdModule  = HOLE_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED2B5E1;
+Reference = H2;
+ValeurCmp = MOUNT_HOLE;
+IdModule  = HOLE_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED2B5DA;
+Reference = H3;
+ValeurCmp = MOUNT_HOLE;
+IdModule  = HOLE_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED2B5DF;
+Reference = H4;
+ValeurCmp = MOUNT_HOLE;
+IdModule  = HOLE_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED2B888;
+Reference = H5;
+ValeurCmp = MOUNT_HOLE;
+IdModule  = HOLE_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED2B88C;
+Reference = H6;
+ValeurCmp = MOUNT_HOLE;
+IdModule  = HOLE_3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E2533;
+Reference = IC1;
+ValeurCmp = ATMEGA168-20PU;
+IdModule  = DIP-28__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED000CD;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBE7E;
+Reference = P2;
+ValeurCmp = I2C;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBB3A;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBF71;
+Reference = P4;
+ValeurCmp = AVR-ISP-6;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED35257;
+Reference = P7;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBB20;
+Reference = Q1;
+ValeurCmp = BS270;
+IdModule  = TO92SGD;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBC1E;
+Reference = Q2;
+ValeurCmp = BS270;
+IdModule  = TO92SGD;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBC0E;
+Reference = Q3;
+ValeurCmp = BS270;
+IdModule  = TO92SGD;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBD3F;
+Reference = Q4;
+ValeurCmp = BS270;
+IdModule  = TO92SGD;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBEFC;
+Reference = R1;
+ValeurCmp = 4k7;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED8CDC1;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBEEC;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBCCB;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /514EBCC4;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED0E410;
+Reference = SW1;
+ValeurCmp = PUSHPUTTON;
+IdModule  = PUSHBUTTON;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED0E409;
+Reference = SW2;
+ValeurCmp = PUSHPUTTON;
+IdModule  = PUSHBUTTON;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED0E3FA;
+Reference = SW3;
+ValeurCmp = PUSHPUTTON;
+IdModule  = PUSHBUTTON;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED0E428;
+Reference = SW4;
+ValeurCmp = PUSHPUTTON;
+IdModule  = PUSHBUTTON;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED0D66B;
+Reference = SW5;
+ValeurCmp = JOYSTICK;
+IdModule  = JOYSTICK_FLIPPED_RIGHT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4209;
+Reference = U1;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E4221;
+Reference = U2;
+ValeurCmp = 100uF;
+IdModule  = CCAP_3.5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0E44C9;
+Reference = U3;
+ValeurCmp = 2X16DIGIT-DISPLAY;
+IdModule  = SIL-16;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ED001BC;
+Reference = U4;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+EndListe
