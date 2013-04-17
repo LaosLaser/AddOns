@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 17 Apr 2013 20:22:37 CEST
+EESchema Schematic File Version 2  date Wed 17 Apr 2013 21:05:51 CEST
 LIBS:panel-cache
 LIBS:power
 LIBS:device
@@ -45,18 +45,22 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L SPEAKER SP1
+U 1 1 516EEF84
+P 2300 5350
+F 0 "SP1" H 2200 5600 70  0000 C CNN
+F 1 "Kingstate KPEG242" H 3100 5300 70  0000 C CNN
+F 2 "KPEG242" H 2300 5350 60  0001 C CNN
+	1    2300 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 5250
+Connection ~ 1550 5250
 Wire Wire Line
 	2800 6250 2950 6250
-Connection ~ 1950 5250
 Wire Wire Line
 	2000 5250 1500 5250
-Wire Wire Line
-	1950 5250 1950 5150
-Connection ~ 1950 5450
-Wire Wire Line
-	1950 5450 1950 5350
-Wire Wire Line
-	1950 5350 2000 5350
 Wire Wire Line
 	2000 5450 1500 5450
 Wire Wire Line
@@ -295,7 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 5500 1550 5450
 Wire Wire Line
-	1500 5250 1500 5100
+	1550 5250 1550 5100
 Wire Wire Line
 	4450 4150 5300 4150
 Wire Wire Line
@@ -315,20 +319,8 @@ Wire Wire Line
 Wire Wire Line
 	8450 2000 8450 1700
 Connection ~ 2800 5950
-Wire Wire Line
-	1950 5150 2000 5150
 Connection ~ 1550 5450
 Connection ~ 1550 5450
-$Comp
-L CONN_4 P5
-U 1 1 516EE28D
-P 2350 5300
-F 0 "P5" V 2300 5300 50  0000 C CNN
-F 1 "CONN_4" V 2400 5300 50  0000 C CNN
-F 2 "SIL-4" H 2350 5300 60  0001 C CNN
-	1    2350 5300
-	1    0    0    1   
-$EndComp
 $Comp
 L MOUNT_HOLE H7
 U 1 1 51583EEB
@@ -434,10 +426,10 @@ Buzzer/Jumper
 $Comp
 L +5V #PWR03
 U 1 1 514EBB4F
-P 1500 5100
-F 0 "#PWR03" H 1500 5190 20  0001 C CNN
-F 1 "+5V" H 1500 5190 30  0000 C CNN
-	1    1500 5100
+P 1550 5100
+F 0 "#PWR03" H 1550 5190 20  0001 C CNN
+F 1 "+5V" H 1550 5190 30  0000 C CNN
+	1    1550 5100
 	1    0    0    -1  
 $EndComp
 $Comp
