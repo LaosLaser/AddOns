@@ -1,10 +1,8 @@
-# EESchema Netlist Version 1.1 created  Wed 17 Apr 2013 20:22:54 CEST
+# EESchema Netlist Version 1.1 created  Wed 17 Apr 2013 20:54:18 CEST
 (
- ( /516EE28D SIL-4  P5 CONN_4 {Lib=CONN_4}
-  (    1 N-000026 )
+ ( /516EEF84 KPEG242  SP1 Kingstate_KPEG242 {Lib=SPEAKER}
+  (    1 +5V )
   (    2 N-000026 )
-  (    3 +5V )
-  (    4 +5V )
  )
  ( /51583EEB HOLE_3MM  H7 MOUNT_HOLE {Lib=MOUNT_HOLE}
  )
@@ -25,7 +23,7 @@
   (    4 GND )
  )
  ( /514EBD3F TO92DGS  Q4 BS270 {Lib=FET_N}
-  (    D N-000013 )
+  (    D N-000011 )
   (    G /LCD_Backlight )
   (    S GND )
  )
@@ -38,8 +36,8 @@
   (    6 /J_Up )
   (    7 +5V )
   (    8 GND )
-  (    9 N-000012 )
-  (   10 N-000004 )
+  (    9 N-000010 )
+  (   10 N-000003 )
   (   11 /B_Enter_/_J_Middle )
   (   12 /B_Esc_/_J_Right )
   (   13 /Joystick_Common )
@@ -148,12 +146,12 @@
   (   13 /LCD_DB6 )
   (   14 /LCD_DB7 )
   (   15 +5V )
-  (   16 N-000013 )
+  (   16 N-000011 )
  )
  ( /4E0E42A2 SIL-3  F1 CERAMIC_FILTER {Lib=CERAMIC_FILTER}
-  (    1 N-000012 )
+  (    1 N-000010 )
   (    2 GND )
-  (    3 N-000004 )
+  (    3 N-000003 )
  )
  ( /4E0E4221 CCAP_3.5MM  U2 100uF {Lib=CP}
   (    1 +5V )
@@ -192,132 +190,130 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "/Buttons Common" "Buttons Common"
- SW2 2
- SW2 1
+Net 1 "/Joystick Common" "Joystick Common"
+ SW5 4
+ IC1 13
+Net 2 "/Buttons Common" "Buttons Common"
  IC1 14
- SW3 1
- SW1 2
+ SW3 2
+ SW4 1
  SW1 1
  SW4 2
- SW4 1
- SW3 2
-Net 2 "/LCD DB4" "LCD DB4"
- IC1 23
- U3 11
-Net 3 "/Joystick Common" "Joystick Common"
- IC1 13
- SW5 4
-Net 4 "" ""
+ SW3 1
+ SW1 2
+ SW2 2
+ SW2 1
+Net 3 "" ""
  IC1 10
  F1 3
-Net 5 "/J Up" "J Up"
- SW5 1
+Net 4 "/J Up" "J Up"
  IC1 6
-Net 6 "/RTS" "RTS"
- U4 2
+ SW5 1
+Net 5 "/RTS" "RTS"
  P1 6
-Net 7 "/TXD" "TXD"
- P1 5
+ U4 2
+Net 6 "/TXD" "TXD"
  IC1 3
-Net 8 "/RXD" "RXD"
+ P1 5
+Net 7 "/RXD" "RXD"
  P1 4
  IC1 2
-Net 9 "/B Enter / J Middle" "B Enter / J Middle"
- IC1 11
- SW3 3
- SW3 4
- SW5 6
-Net 10 "+5V" "+5V"
- U2 1
- U1 1
- R2 1
- U3 15
- P5 3
- IC1 21
- P3 2
- IC1 7
- P2 1
- P4 2
- U3 2
- IC1 20
- P1 3
- P5 4
-Net 11 "GND" "GND"
- P4 6
- Q4 S
- P2 4
- P1 1
- U1 2
- U2 2
- F1 2
+Net 8 "GND" "GND"
  P1 2
- U3 10
+ U1 2
+ P7 1
+ U2 2
  U3 5
- U3 9
  U3 7
  U3 8
- P7 1
- Q1 S
- U3 1
- IC1 8
+ U3 9
+ U3 10
+ F1 2
  IC1 22
-Net 12 "" ""
- F1 1
+ P4 6
+ P2 4
+ Q4 S
+ U3 1
+ P1 1
+ Q1 S
+ IC1 8
+Net 9 "+5V" "+5V"
+ P4 2
+ R2 1
+ P2 1
+ P3 2
+ P1 3
+ U3 2
+ IC1 20
+ IC1 7
+ U3 15
+ IC1 21
+ U2 1
+ U1 1
+ SP1 1
+Net 10 "" ""
  IC1 9
-Net 13 "" ""
- Q4 D
+ F1 1
+Net 11 "" ""
  U3 16
-Net 14 "/LCD E" "LCD E"
+ Q4 D
+Net 12 "/B Enter / J Middle" "B Enter / J Middle"
+ IC1 11
+ SW5 6
+ SW3 3
+ SW3 4
+Net 13 "/LCD DB5" "LCD DB5"
+ P4 4
+ U3 12
+ IC1 17
+Net 14 "/LCD DB4" "LCD DB4"
+ IC1 23
+ U3 11
+Net 15 "/LCD E" "LCD E"
  IC1 25
  U3 6
-Net 15 "/LCD RS" "LCD RS"
+Net 16 "/LCD RS" "LCD RS"
  U3 4
  IC1 26
-Net 16 "/LCD Contrast" "LCD Contrast"
- U3 3
+Net 17 "/LCD Contrast" "LCD Contrast"
  IC1 16
-Net 17 "/LCD Backlight" "LCD Backlight"
+ U3 3
+Net 18 "/LCD Backlight" "LCD Backlight"
  Q4 G
  IC1 15
-Net 18 "/B Esc / J Right" "B Esc / J Right"
- SW4 3
- SW5 5
- IC1 12
- SW4 4
 Net 19 "/B Down / J Left" "B Down / J Left"
- SW2 4
  IC1 5
- SW2 3
  SW5 2
+ SW2 3
+ SW2 4
 Net 20 "/B Up / J Down" "B Up / J Down"
- IC1 4
- SW1 3
  SW1 4
  SW5 3
-Net 21 "/SCL" "SCL"
- IC1 28
+ IC1 4
+ SW1 3
+Net 21 "/B Esc / J Right" "B Esc / J Right"
+ IC1 12
+ SW5 5
+ SW4 4
+ SW4 3
+Net 22 "/SCL" "SCL"
  P2 2
-Net 22 "/SDA" "SDA"
- IC1 27
+ IC1 28
+Net 23 "/SDA" "SDA"
  P2 3
-Net 23 "/LCD DB6" "LCD DB6"
+ IC1 27
+Net 24 "/LCD DB6" "LCD DB6"
  P4 1
- IC1 18
  U3 13
-Net 24 "/LCD DB7" "LCD DB7"
+ IC1 18
+Net 25 "/LCD DB7" "LCD DB7"
  U3 14
  IC1 19
  P4 3
-Net 25 "/LCD DB5" "LCD DB5"
- U3 12
- IC1 17
- P4 4
 Net 26 "" ""
- P5 1
- P5 2
  Q1 D
  P3 1
+ SP1 2
 Net 27 "/Buzzer/Jumper" "Buzzer/Jumper"
  P7 2
  IC1 24
@@ -325,7 +321,7 @@ Net 27 "/Buzzer/Jumper" "Buzzer/Jumper"
 Net 28 "/RESET" "RESET"
  R2 2
  IC1 1
- P4 5
  U4 1
+ P4 5
 }
 #End
